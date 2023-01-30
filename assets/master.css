@@ -1,0 +1,45 @@
+body {
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #fff !important;
+    background: #141414 !important;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.imglink {
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.imglink[href*="isle-of-dogs"] .prev {
+    float: left;
+    background: url(./iod_prev.png) center;
+    background-size: 200%;
+    transition: all .2s ease;
+}
+.imglink[href*="on-trend"] .prev {
+    float: right;
+    background: url(./ot_prev.png) center;
+    background-size: 200%;
+    transition: all .2s ease;
+}
+.prev {
+    width: 50%;
+    height: 100%;
+    background-size: 200%;
+    transition: all .2s ease;
+}
+
+.imglink:hover {
+    opacity: .75;
+    transition: all .2s ease;
+}
+.imglink:hover .prev {
+    background-size: 225%;
+    transition: all .2s ease;
+}
